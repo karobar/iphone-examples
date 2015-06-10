@@ -1,0 +1,133 @@
+<shader>
+  <vshader>
+    <![CDATA[
+        precision mediump float;
+        attribute vec3 vertex;
+        attribute vec3 normal;
+        attribute vec3 color;
+      
+        uniform mat4 Model_Matrix;
+        uniform mat4 View_Matrix;
+        uniform mat4 Proj_Matrix;
+        
+        varying vec3 v_normalDirection;
+        
+        varying vec3 v_vertexToBulb;
+        uniform vec3 u_pointPos;
+        
+        varying vec3 outColor;
+        //B481-TODO:
+        varying vec3 outNormal;
+
+        void main()
+        {
+            //get OpenGL's normal
+            v_normalDirection    =  normalize(View_Matrix * vec4(normal,0.0)).xyz;
+            //Translate OpenGL's normal into view space
+            //v_normalDirectionCVS =  normalize((View_Matrix * vec4(normal,0.0)).xyz);
+            //get the normalized negative of the light vector
+            //v_viewDirectionCVS   = -normalize(vec3(View_Matrix * vec4(vertex,0.0)));
+        
+            //////////////////////////////////////////////////////////////////////////
+            // Directional Light (Sun)
+            //u_lightDir0CVS = normalize((View_Matrix * vec4(u_lightDir0,0.0)).xyz);
+            
+            //compute the vector from the vertex to the light bulb
+            v_vertexToBulb = u_pointPos-vec3(Model_Matrix * vec4(vertex,0.0));
+        
+            //B481-TODO:
+            //outNormal = ViewMatrix * ModelMatrix * vec4(vertex,1.0);
+        
+            //outColor = color;
+            outColor = vec3(0.0,0.0,1.0);
+        
+            gl_Position = Proj_Matrix * View_Matrix * Model_Matrix * vec4(vertex,1.0);
+        }
+		]]>
+  </vshader>
+  <fshader>
+    <![CDATA[
+        precision mediump float;
+      
+        uniform mat4 View_Matrix;
+
+        // B481-TODO: you may need to define uniform variables
+        //            for all light properties here, e.g.:
+        // uniform vec3 u_light...;
+
+        varying vec3 v_normalDirection;
+        
+        //Da Sun
+        uniform vec3 u_lightDir0;
+        uniform float u_lightDiffuse0;
+        
+        //Da bulB
+        //uniform vec3 u_pointPos;
+        uniform vec3 u_pointDiffuse;
+        varying vec3 v_vertexToBulb;
+        
+        varying vec3 outColor;
+
+        void main()
+        {     
+            // B481-TODO:
+            // varying variables may need to be used here
+            //   to receive the lighting vectors
+            //   that are computed in the vertex shader.
+            // Hint 1: don't forget to renormalize vectors.
+            // Hint 2: all lighting vectors need to be in the same space, typically in the "view" space.
+            vec3 normalDirection = normalize(v_normalDirection);
+            normalDirection =  normalize(View_Matrix * vec4(normalDirection,0.0)).xyz;
+        
+            vec3 viewLight = normalize(u_lightDir0);
+            viewLight      = -normalize(View_Matrix * vec4(viewLight,0.0)).xyz;
+        
+            //vec3 viewLight = -normalize(View_Matrix * vec4(viewLight,0.0)).xyz;
+        
+            // Directional Light:
+            // B481-TODO:
+            // you may have to compute
+            // ...
+            // float diffuse0 = ...
+            // ...
+            // float specular0 = ...
+            //vec3 lightDir = normalize(u_lightDir0);
+            float diffuse0 = max(0.0, dot(normalDirection, viewLight));// * u_lightDiffuse0;
+        
+            // Point Light:
+            // B481-TODO:
+            // you may have to compute
+            // ...
+            // float diffuse1 = ...
+            //...
+            // float specular1 = ...
+            float distance = length(v_vertexToBulb);
+            float attenuation = 20.0 / distance;
+            vec3 normalL = normalize(v_vertexToBulb);
+            float diffuse1 = max(0.0, dot(normalDirection, normalL));
+        
+            // Spot Light:
+            // B481-TODO:
+            // you may have to compute
+            // ...
+            // float diffuse2 = ...
+            // ...
+            // float specular2 = ...
+        
+        
+            // B481-TODO:
+            // you may have to compute the final fragment color value here,
+            //   from colors obtained from the total diffuse lighting and specular lighting models:
+            float monochromeDiff = 0.55 * (diffuse0 + diffuse1);
+            vec3 totalDiffuseColor = vec3(monochromeDiff,monochromeDiff,monochromeDiff);//* u_lightColor0;
+        
+            // vec3 totalSpecularColor = specular0  u_lightColor0 + ...;
+            //vec3 totalColor = totalDiffuseColor;
+        
+            gl_FragColor = vec4(outColor+totalDiffuseColor, 1.0);
+
+            //gl_FragColor = vec4(outColor, 1.0);
+        }
+		]]>
+  </fshader>
+</shader>
