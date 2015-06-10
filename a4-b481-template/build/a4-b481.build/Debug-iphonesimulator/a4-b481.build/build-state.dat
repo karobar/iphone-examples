@@ -1,477 +1,0 @@
-Ta4-b481
-v5
-r1
-cCheck dependencies
-cProcessInfoPlistFile /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app/Info.plist Info.plist
-cCpResource Icon.png build/Debug-iphonesimulator/a4-b481.app/Icon.png
-cCpResource Default.png build/Debug-iphonesimulator/a4-b481.app/Default.png
-cCpResource SDL/include/doxyfile build/Debug-iphonesimulator/a4-b481.app/doxyfile
-cCpResource SDL/include/SDL_config.h.cmake build/Debug-iphonesimulator/a4-b481.app/SDL_config.h.cmake
-cCpResource SDL/include/SDL_config.h.in build/Debug-iphonesimulator/a4-b481.app/SDL_config.h.in
-cCpResource Src/Shaders build/Debug-iphonesimulator/a4-b481.app/Shaders
-cCpResource Data/Textures build/Debug-iphonesimulator/a4-b481.app/Textures
-cCpResource Data/Scenes/Jazz.dae build/Debug-iphonesimulator/a4-b481.app/Jazz.dae
-cCompileC build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/SceneManager.o /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/SceneManager.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/Mesh.o /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/Mesh.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/Camera.o /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/Camera.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/main.o /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/main.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/MaterialManager.o /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/MaterialManager.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/ResourcePath.o /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/ResourcePath.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app/a4-b481 normal i386
-cGenerateDSYMFile /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app.dSYM /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app/a4-b481
-cTouch /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk
-c0000000050EDEAFB0000000000000110
-t1357769467
-s272
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-c0000000051B4C2A600000000003D4DF0
-t1370800806
-s4017648
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/CoreAudio.framework/CoreAudio
-c0000000051B4C2AC00000000000B5DA0
-t1370800812
-s744864
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c0000000051B4C2AF0000000000228FE0
-t1370800815
-s2265056
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c0000000051B4C2BE00000000003DDFA0
-t1370800830
-s4054944
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES2/gl.h
-c0000000051B4C2EC00000000000092AA
-t1370800876
-s37546
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES2/glext.h
-c0000000051B4C2EC0000000000005E76
-t1370800876
-s24182
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
-c0000000051B4C2EC0000000000015400
-t1370800876
-s87040
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
-c0000000051B4C2EE00000000001D5750
-t1370800878
-s1922896
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c0000000051B4C2FD0000000000AB6230
-t1370800893
-s11231792
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Data/Scenes/Jazz.dae
-c000000005356864E00000000009270C4
-t1398179406
-s9597124
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Data/Textures
-c0000000053613CB70000000000000264
-t1398881463
-s612
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Default.png
-c0000000052E42E700000000000017585
-t1390685808
-s95621
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Icon.png
-c0000000052E42A620000000000001C15
-t1390684770
-s7189
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/SDL/include/SDL_config.h.cmake
-c0000000052E409880000000000003BB4
-t1390676360
-s15284
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/SDL/include/SDL_config.h.in
-c0000000052E40988000000000000207D
-t1390676360
-s8317
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/SDL/include/doxyfile
-c0000000052E40988000000000000FFAD
-t1390676360
-s65453
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/SDL/lib/libSDL2Sim.a
-c0000000052E41F3200000000003B2718
-t1390681906
-s3876632
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/Camera.cpp
-c00000000534E9F43000000000000094A
-t1397661507
-s2378
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/MaterialManager.cpp
-c000000005355C9A50000000000001B11
-t1398131109
-s6929
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/Mesh.cpp
-c000000005356AE350000000000000D94
-t1398189621
-s3476
-i"Mesh.h"
-i<OpenGLES/ES2/gl.h>
-i<OpenGLES/ES2/glext.h>
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/Mesh.h
-c0000000053542E570000000000000215
-t1398025815
-s533
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/ResourcePath.mm
-c0000000052E4214C000000000000019B
-t1390682444
-s411
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/SceneManager.cpp
-c000000005356B9260000000000003224
-t1398192422
-s12836
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/Shaders
-c0000000053613CB700000000000000CC
-t1398881463
-s204
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/main.cpp
-c000000005356B9840000000000002B04
-t1398192516
-s11012
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/assimp/lib/libassimpd.a
-c0000000053472F1A00000000014E07C8
-t1397174042
-s21891016
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app
-t2
-s0
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app.dSYM
-t2
-s0
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app/Default.png
-t2
-s0
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app/Icon.png
-t2
-s0
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app/Info.plist
-t2
-s0
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app/Jazz.dae
-t2
-s0
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app/PkgInfo
-t2
-s0
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app/SDL_config.h.cmake
-t2
-s0
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app/SDL_config.h.in
-t2
-s0
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app/Shaders
-t2
-s0
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app/Textures
-t2
-s0
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app/a4-b481
-t2
-s0
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app/doxyfile
-t2
-s0
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/Camera.o
-t2
-s0
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/MaterialManager.o
-t2
-s0
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/Mesh.o
-t2
-s0
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/ResourcePath.o
-t2
-s0
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/SceneManager.o
-t2
-s0
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/a4-b481.LinkFileList
-c0000000053613CC50000000000000419
-t1398881477
-s1049
-
-N/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/main.o
-t2
-s0
-
-NInfo.plist
-c0000000052E4260C000000000000034F
-t1390683660
-s847
-
-CBuild AST from /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/Camera.cpp
-r0
-
-CBuild AST from /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/MaterialManager.cpp
-r0
-
-CBuild AST from /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/Mesh.cpp
-r0
-
-CBuild AST from /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/ResourcePath.mm
-r0
-
-CBuild AST from /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/SceneManager.cpp
-r0
-
-CBuild AST from /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/main.cpp
-r0
-
-CCheck dependencies
-r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies3ca1ab457411b941^b22dbb457411b941^---0#1#0#--18"Check dependencies36"0593BF01-C8F7-4825-BA2C-989AF4A6A2B2-
-
-CCompileC build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/Camera.o /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/Camera.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s420574277.910491
-e420574279.025471
-r1
-xCompileC
-xbuild/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/Camera.o
-x/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/Camera.cpp
-xnormal
-xi386
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"Compile /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/Camera.cppb649e9457411b941^f18406477411b941^---0#0#0#-19%DVTDocumentLocation2@117"file://localhost/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/Camera.cpp0000000000000000^3501"CompileC build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/Camera.o Src/Camera.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -mios-simulator-version-min=6.1 -iquote /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/a4-b481-generated-files.hmap -I/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/a4-b481-own-target-headers.hmap -I/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/a4-b481-all-target-headers.hmap -iquote /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/a4-b481-project-headers.hmap -I/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/include -Iassimp/include -Iglm/.. -I/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/DerivedSources/i386 -I/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/DerivedSources -F/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator -MMD -MT dependencies -MF /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/Camera.d --serialize-diagnostics /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/Camera.dia -c /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/Camera.cpp -o /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/Camera.o36"46BC6C99-40C1-4399-AF20-722ADA20B60A-
-
-CCompileC build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/MaterialManager.o /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/MaterialManager.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s420574279.027214
-e420574280.332127
-r1
-xCompileC
-xbuild/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/MaterialManager.o
-x/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/MaterialManager.cpp
-xnormal
-xi386
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-oIn file included from /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/MaterialManager.cpp:2:
-o/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/MaterialManager.h:25:53: warning: control reaches end of non-void function [-Wreturn-type]
-o        MaterialManager& operator=(MaterialManager const&){};
-o                                                           ^
-o1 warning generated.
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection118"Compile /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/MaterialManager.cpp8b3607477411b941^d787d1487411b941^-462"In file included from /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/MaterialManager.cpp:2:/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/MaterialManager.h:25:53: warning: control reaches end of non-void function [-Wreturn-type]        MaterialManager& operator=(MaterialManager const&){};                                                           ^1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@40"Control reaches end of non-void function-420574280#18446744073709551615#0#1(2@135"In file included from /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/MaterialManager.cpp:2:-420574280#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@126"file://localhost/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/MaterialManager.cpp0000000000000000^1#9#1#9#11#0#30"Apple LLVM compiler 4.2 Notice--1#27"com.apple.dt.IDE.diagnostic3@124"file://localhost/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/MaterialManager.h0000000000000000^24#52#24#52#538#0#14"Semantic Issue--0#0#0#-19%DVTDocumentLocation4@126"file://localhost/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/MaterialManager.cpp0000000000000000^3555"CompileC build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/MaterialManager.o Src/MaterialManager.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -mios-simulator-version-min=6.1 -iquote /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/a4-b481-generated-files.hmap -I/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/a4-b481-own-target-headers.hmap -I/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/a4-b481-all-target-headers.hmap -iquote /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/a4-b481-project-headers.hmap -I/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/include -Iassimp/include -Iglm/.. -I/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/DerivedSources/i386 -I/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/DerivedSources -F/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator -MMD -MT dependencies -MF /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/MaterialManager.d --serialize-diagnostics /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/MaterialManager.dia -c /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/MaterialManager.cpp -o /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/MaterialManager.o36"340DBBC2-B82D-4126-B549-A9892A420F76-
-
-CCompileC build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/Mesh.o /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/Mesh.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s420574277.910176
-e420574279.534453
-r1
-xCompileC
-xbuild/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/Mesh.o
-x/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/Mesh.cpp
-xnormal
-xi386
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-o/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/Mesh.cpp:67:13: warning: unused variable 'addr' [-Wunused-variable]
-o        int addr = glGetUniformLocation(programId,(str+(char)('0'+i)).c_str());
-o            ^
-o1 warning generated.
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Compile /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/Mesh.cpp4640e9457411b941^207bd1487411b941^-274"/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/Mesh.cpp:67:13: warning: unused variable 'addr' [-Wunused-variable]        int addr = glGetUniformLocation(programId,(str+(char)('0'+i)).c_str());            ^1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@22"Unused variable 'addr'-420574279#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@115"file://localhost/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/Mesh.cpp0000000000000000^66#12#66#12#1927#0#19"Unused Entity Issue--0#0#0#-19%DVTDocumentLocation4@115"file://localhost/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/Mesh.cpp0000000000000000^3489"CompileC build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/Mesh.o Src/Mesh.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -mios-simulator-version-min=6.1 -iquote /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/a4-b481-generated-files.hmap -I/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/a4-b481-own-target-headers.hmap -I/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/a4-b481-all-target-headers.hmap -iquote /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/a4-b481-project-headers.hmap -I/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/include -Iassimp/include -Iglm/.. -I/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/DerivedSources/i386 -I/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/DerivedSources -F/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator -MMD -MT dependencies -MF /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/Mesh.d --serialize-diagnostics /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/Mesh.dia -c /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/Mesh.cpp -o /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/Mesh.o36"AFF7366A-954A-4579-9E6F-A9D0C4572B97-
-
-CCompileC build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/ResourcePath.o /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/ResourcePath.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
-s420574279.535969
-e420574280.201053
-r1
-xCompileC
-xbuild/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/ResourcePath.o
-x/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/ResourcePath.mm
-xnormal
-xi386
-xobjective-c++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Compile /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/ResourcePath.mmf56589477411b941^3885d1487411b941^---0#0#0#-19%DVTDocumentLocation2@122"file://localhost/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/ResourcePath.mm0000000000000000^3762"CompileC build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/ResourcePath.o Src/ResourcePath.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch i386 -fmessage-length=0 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/a4-b481-generated-files.hmap -I/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/a4-b481-own-target-headers.hmap -I/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/a4-b481-all-target-headers.hmap -iquote /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/a4-b481-project-headers.hmap -I/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/include -Iassimp/include -Iglm/.. -I/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/DerivedSources/i386 -I/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/DerivedSources -F/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator -MMD -MT dependencies -MF /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/ResourcePath.d --serialize-diagnostics /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/ResourcePath.dia -c /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/ResourcePath.mm -o /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/ResourcePath.o36"CFE49CE6-0C41-4F65-A18A-0EB74DCC2DCB-
-
-CCompileC build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/SceneManager.o /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/SceneManager.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s420574277.910152
-e420574280.063416
-r1
-xCompileC
-xbuild/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/SceneManager.o
-x/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/SceneManager.cpp
-xnormal
-xi386
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-oIn file included from /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/SceneManager.cpp:9:
-o/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/MaterialManager.h:25:53: warning: control reaches end of non-void function [-Wreturn-type]
-o        MaterialManager& operator=(MaterialManager const&){};
-o                                                           ^
-o1 warning generated.
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"Compile /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/SceneManager.cpp643de9457411b941^8483d1487411b941^-459"In file included from /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/SceneManager.cpp:9:/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/MaterialManager.h:25:53: warning: control reaches end of non-void function [-Wreturn-type]        MaterialManager& operator=(MaterialManager const&){};                                                           ^1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@40"Control reaches end of non-void function-420574280#18446744073709551615#0#1(2@132"In file included from /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/SceneManager.cpp:9:-420574280#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@123"file://localhost/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/SceneManager.cpp0000000000000000^8#9#8#9#193#0#30"Apple LLVM compiler 4.2 Notice--1#27"com.apple.dt.IDE.diagnostic3@124"file://localhost/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/MaterialManager.h0000000000000000^24#52#24#52#538#0#14"Semantic Issue--0#0#0#-19%DVTDocumentLocation4@123"file://localhost/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/SceneManager.cpp0000000000000000^3537"CompileC build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/SceneManager.o Src/SceneManager.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -mios-simulator-version-min=6.1 -iquote /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/a4-b481-generated-files.hmap -I/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/a4-b481-own-target-headers.hmap -I/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/a4-b481-all-target-headers.hmap -iquote /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/a4-b481-project-headers.hmap -I/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/include -Iassimp/include -Iglm/.. -I/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/DerivedSources/i386 -I/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/DerivedSources -F/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator -MMD -MT dependencies -MF /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/SceneManager.d --serialize-diagnostics /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/SceneManager.dia -c /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/SceneManager.cpp -o /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/SceneManager.o36"7036A8BD-91D9-408E-B627-77AD381558A1-
-
-CCompileC build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/main.o /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/main.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s420574277.910670
-e420574279.883676
-r1
-xCompileC
-xbuild/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/main.o
-x/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/main.cpp
-xnormal
-xi386
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-oIn file included from /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/main.cpp:22:
-o/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/MaterialManager.h:25:53: warning: control reaches end of non-void function [-Wreturn-type]
-o        MaterialManager& operator=(MaterialManager const&){};
-o                                                           ^
-o/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/main.cpp:150:15: warning: unused variable 'secondsSinceStart' [-Wunused-variable]
-o        float secondsSinceStart = SDL_GetTicks() / 1000.0f;
-o              ^
-o2 warnings generated.
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Compile /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/main.cpp8f56e9457411b941^5a81d1487411b941^-702"In file included from /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/main.cpp:22:/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/MaterialManager.h:25:53: warning: control reaches end of non-void function [-Wreturn-type]        MaterialManager& operator=(MaterialManager const&){};                                                           ^/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/main.cpp:150:15: warning: unused variable 'secondsSinceStart' [-Wunused-variable]        float secondsSinceStart = SDL_GetTicks() / 1000.0f;              ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@40"Control reaches end of non-void function-420574279#18446744073709551615#0#1(2@125"In file included from /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/main.cpp:22:-420574279#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@115"file://localhost/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/main.cpp0000000000000000^21#9#21#9#692#0#30"Apple LLVM compiler 4.2 Notice--1#27"com.apple.dt.IDE.diagnostic3@124"file://localhost/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/MaterialManager.h0000000000000000^24#52#24#52#538#0#14"Semantic Issue--2@35"Unused variable 'secondsSinceStart'-420574279#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@115"file://localhost/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/main.cpp0000000000000000^149#14#149#14#4312#0#19"Unused Entity Issue--0#0#0#-19%DVTDocumentLocation4@115"file://localhost/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/main.cpp0000000000000000^3489"CompileC build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/main.o Src/main.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -mios-simulator-version-min=6.1 -iquote /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/a4-b481-generated-files.hmap -I/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/a4-b481-own-target-headers.hmap -I/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/a4-b481-all-target-headers.hmap -iquote /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/a4-b481-project-headers.hmap -I/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/include -Iassimp/include -Iglm/.. -I/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/DerivedSources/i386 -I/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/DerivedSources -F/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator -MMD -MT dependencies -MF /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/main.dia -c /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/main.cpp -o /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/main.o36"CC260CFC-6CC0-4F5F-AA47-F698D74823FD-
-
-CCpResource Data/Scenes/Jazz.dae build/Debug-iphonesimulator/a4-b481.app/Jazz.dae
-s420574277.763129
-e420574277.785929
-r1
-xCpResource
-xData/Scenes/Jazz.dae
-xbuild/Debug-iphonesimulator/a4-b481.app/Jazz.dae
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Copy build/Debug-iphonesimulator/a4-b481.app/Jazz.dae7479c3457411b941^d191e4457411b941^---0#0#0#-19%DVTDocumentLocation2@151"file://localhost/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app/Jazz.dae000000000080d041^717"CpResource Data/Scenes/Jazz.dae build/Debug-iphonesimulator/a4-b481.app/Jazz.dae    cd /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Data/Scenes/Jazz.dae /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app36"75778903-D641-474D-B5BF-2845C5666D9A-
-
-CCpResource Data/Textures build/Debug-iphonesimulator/a4-b481.app/Textures
-s420574277.763124
-e420574277.901849
-r1
-xCpResource
-xData/Textures
-xbuild/Debug-iphonesimulator/a4-b481.app/Textures
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Copy build/Debug-iphonesimulator/a4-b481.app/Textures8176c3457411b941^c6dfe6457411b941^---0#0#0#-19%DVTDocumentLocation2@151"file://localhost/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app/Textures000000000080d041^703"CpResource Data/Textures build/Debug-iphonesimulator/a4-b481.app/Textures    cd /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Data/Textures /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app36"B687E9DB-9E34-4C21-84E9-5751829AD05F-
-
-CCpResource Default.png build/Debug-iphonesimulator/a4-b481.app/Default.png
-s420574277.757029
-e420574277.760488
-r1
-xCpResource
-xDefault.png
-xbuild/Debug-iphonesimulator/a4-b481.app/Default.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Copy build/Debug-iphonesimulator/a4-b481.app/Default.pngc1e5c1457411b941^0168e4457411b941^---0#0#0#-19%DVTDocumentLocation2@154"file://localhost/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app/Default.png000000000080d041^702"CpResource Default.png build/Debug-iphonesimulator/a4-b481.app/Default.png    cd /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Default.png /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app36"991D6100-009A-4933-97F8-10CDBB26D786-
-
-CCpResource Icon.png build/Debug-iphonesimulator/a4-b481.app/Icon.png
-s420574277.756198
-e420574277.759467
-r1
-xCpResource
-xIcon.png
-xbuild/Debug-iphonesimulator/a4-b481.app/Icon.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Copy build/Debug-iphonesimulator/a4-b481.app/Icon.png78b8c1457411b941^c362e4457411b941^---0#0#0#-19%DVTDocumentLocation2@151"file://localhost/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app/Icon.png000000000080d041^693"CpResource Icon.png build/Debug-iphonesimulator/a4-b481.app/Icon.png    cd /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Icon.png /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app36"F63421F0-0FA7-49EB-8A76-DB08F2AE803B-
-
-CCpResource SDL/include/SDL_config.h.cmake build/Debug-iphonesimulator/a4-b481.app/SDL_config.h.cmake
-s420574277.758422
-e420574277.762647
-r1
-xCpResource
-xSDL/include/SDL_config.h.cmake
-xbuild/Debug-iphonesimulator/a4-b481.app/SDL_config.h.cmake
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Copy build/Debug-iphonesimulator/a4-b481.app/SDL_config.h.cmake3942c2457411b941^7e72e4457411b941^---0#0#0#-19%DVTDocumentLocation2@161"file://localhost/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app/SDL_config.h.cmake000000000080d041^747"CpResource SDL/include/SDL_config.h.cmake build/Debug-iphonesimulator/a4-b481.app/SDL_config.h.cmake    cd /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/SDL/include/SDL_config.h.cmake /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app36"0572F534-91EE-4C55-A2E2-29E759A660EE-
-
-CCpResource SDL/include/SDL_config.h.in build/Debug-iphonesimulator/a4-b481.app/SDL_config.h.in
-s420574277.760718
-e420574277.765028
-r1
-xCpResource
-xSDL/include/SDL_config.h.in
-xbuild/Debug-iphonesimulator/a4-b481.app/SDL_config.h.in
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Copy build/Debug-iphonesimulator/a4-b481.app/SDL_config.h.inf0ddc2457411b941^fd87e4457411b941^---0#0#0#-19%DVTDocumentLocation2@158"file://localhost/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app/SDL_config.h.in000000000080d041^738"CpResource SDL/include/SDL_config.h.in build/Debug-iphonesimulator/a4-b481.app/SDL_config.h.in    cd /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/SDL/include/SDL_config.h.in /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app36"3210B4A8-C557-4C54-8DE6-2C2ACCDC5622-
-
-CCpResource SDL/include/doxyfile build/Debug-iphonesimulator/a4-b481.app/doxyfile
-s420574277.757610
-e420574277.761906
-r1
-xCpResource
-xSDL/include/doxyfile
-xbuild/Debug-iphonesimulator/a4-b481.app/doxyfile
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Copy build/Debug-iphonesimulator/a4-b481.app/doxyfile931ac2457411b941^506de4457411b941^---0#0#0#-19%DVTDocumentLocation2@151"file://localhost/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app/doxyfile000000000080d041^717"CpResource SDL/include/doxyfile build/Debug-iphonesimulator/a4-b481.app/doxyfile    cd /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/SDL/include/doxyfile /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app36"638C9FE9-1912-4453-9E1A-42153BB6410B-
-
-CCpResource Src/Shaders build/Debug-iphonesimulator/a4-b481.app/Shaders
-s420574277.760756
-e420574277.764674
-r1
-xCpResource
-xSrc/Shaders
-xbuild/Debug-iphonesimulator/a4-b481.app/Shaders
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection52"Copy build/Debug-iphonesimulator/a4-b481.app/Shaders8bddc2457411b941^357be4457411b941^---0#0#0#-19%DVTDocumentLocation2@150"file://localhost/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app/Shaders000000000080d041^698"CpResource Src/Shaders build/Debug-iphonesimulator/a4-b481.app/Shaders    cd /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Src/Shaders /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app36"4FCDEA7A-66B7-4244-8C41-8378B344D44F-
-
-CGenerateDSYMFile /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app.dSYM /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app/a4-b481
-s420574281.480304
-e420574281.758695
-r1
-xGenerateDSYMFile
-x/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app.dSYM
-x/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app/a4-b481
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection140"Generate /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app.dSYMd5067b497411b941^753cc2497411b941^---0#0#0#-19%DVTDocumentLocation2@147"file://localhost/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app.dSYM000000000080d041^769"GenerateDSYMFile build/Debug-iphonesimulator/a4-b481.app.dSYM build/Debug-iphonesimulator/a4-b481.app/a4-b481    cd /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app/a4-b481 -o /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app.dSYM36"7E29E25C-1424-41EC-BA3C-53794C35215F-
-
-CLd /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app/a4-b481 normal i386
-s420574280.338859
-e420574281.473474
-r1
-xLd
-x/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app/a4-b481
-xnormal
-xi386
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection139"Link /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app/a4-b48100e256487411b941^745c79497411b941^---0#0#0#--1710"Ld build/Debug-iphonesimulator/a4-b481.app/a4-b481 normal i386    cd /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481    setenv IPHONEOS_DEPLOYMENT_TARGET 6.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -L/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator -L/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/SDL/lib -Lassimp/lib -L/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/assimp/lib -F/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator -filelist /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/a4-b481.build/Debug-iphonesimulator/a4-b481.build/Objects-normal/i386/a4-b481.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -stdlib=libc++ -Xlinker -no_implicit_dylibs -fobjc-link-runtime -mios-simulator-version-min=6.1 -framework Foundation -framework UIKit -framework OpenGLES -framework QuartzCore -framework CoreAudio -framework AudioToolbox -framework CoreGraphics -lSDL2Sim -lassimpd -o /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app/a4-b48136"ED48FFBB-CD11-4E96-A7DF-D164E420F4C3-
-
-CProcessInfoPlistFile /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app/Info.plist Info.plist
-s420574277.741759
-e420574277.748280
-r1
-xProcessInfoPlistFile
-x/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app/Info.plist
-xInfo.plist
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Process Info.plist6c08be457411b941^365ce4457411b941^-203"warning: invalid character '_' in Bundle Identifier at column 18. This string must be a uniform type identifier (UTI) that contains only alphanumeric (A-Z,a-z,0-9), hyphen (-), and period (.) characters.1(21%IDEActivityLogMessage2@194"invalid character '_' in Bundle Identifier at column 18. This string must be a uniform type identifier (UTI) that contains only alphanumeric (A-Z,a-z,0-9), hyphen (-), and period (.) characters.102"Invalid character '_' in Bundle Identifier at column 18. This string must be a uniform type identifier420574277#18446744073709551615#0#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#26"Info.plist Utility Warning--0#0#0#-19%DVTDocumentLocation4@113"file://localhost/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/Info.plist0000000000000000^762"ProcessInfoPlistFile build/Debug-iphonesimulator/a4-b481.app/Info.plist Info.plist    cd /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Info.plist -genpkginfo /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app/Info.plist36"C88A4383-AEA2-4EB3-B881-CD6AC57CF9C8-
-
-CTouch /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app
-s420574281.767243
-e420574281.776727
-r1
-xTouch
-x/Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection132"Touch /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app6e85c4497411b941^d3d8c6497411b941^---0#0#0#--484"Touch build/Debug-iphonesimulator/a4-b481.app    cd /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/mitja/Desktop/481-2014-Spring/assignments-b481/a4-b481/a4-b481-template/a4-b481/build/Debug-iphonesimulator/a4-b481.app36"8189CD18-4B3D-41BB-A8F9-D7D5F666B93F-
-
