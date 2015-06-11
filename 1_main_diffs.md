@@ -1,100 +1,91 @@
 <pre>
-```
-#include "SDL.h"
-#include "ResourcePath.h"
+&#035;include "SDL.h"
+&#035;include "ResourcePath.h"
 
-#include <OpenGLES/ES2/gl.h>
-#include <OpenGLES/ES2/glext.h>
+&#035;include &ltOpenGLES/ES2/gl.h&gt
+&#035;include &ltOpenGLES/ES2/glext.h&gt
 
-#include <memory>
-```
+&#035;include &ltmemory&gt
 using namespace std;
 
 <b>SDL_TouchFingerEvent myFinger;</b>
 
 class Graphics {
 private:
+   SDL_Window*     m_window;
     
-    SDL_Window*     m_window;
+   GLuint          m_shaderProgram;
     
-    GLuint          m_shaderProgram;
-    
-    ///
+   ///
     // Create a shader object, load the shader source, and
     // compile the shader.
     //
-    GLuint LoadShader ( GLenum type, const char *shaderSrc ) {
+   GLuint LoadShader ( GLenum type, const char *shaderSrc ) {
         printf("Graphics->LoadShader()\n");
-
         GLuint shader;
         GLint compiled;
         
-        // Create the shader object
+&#160;       // Create the shader object
         shader = glCreateShader ( type );
         
-        if ( shader == 0 )
-            return 0;
+   &#160;    if ( shader == 0 )
+   &#160;        return 0;
         
-        // Load the shader source
-        glShaderSource ( shader, 1, &shaderSrc, NULL );
+   &#160;    // Load the shader source
+   &#160;    glShaderSource ( shader, 1, &shaderSrc, NULL );
         
-        // Compile the shader
-        glCompileShader ( shader );
+   &#160;    // Compile the shader
+   &#160;    glCompileShader ( shader );
         
-        // Check the compile status
-        glGetShaderiv ( shader, GL_COMPILE_STATUS, &compiled );
+   &#160;    // Check the compile status
+   &#160;    glGetShaderiv ( shader, GL_COMPILE_STATUS, &compiled );
         
-        if ( !compiled )
-        {
-            GLint infoLen = 0;
+   &#160;    if ( !compiled ) {
+   &#160;        GLint infoLen = 0;
+       
+   &#160;    glGetShaderiv ( shader, GL_INFO_LOG_LENGTH, &infoLen );
             
-            glGetShaderiv ( shader, GL_INFO_LOG_LENGTH, &infoLen );
-            
-            if ( infoLen > 1 )
-            {
-                char* infoLog = (char *)malloc (sizeof(char) * infoLen );
+   &#160;    if ( infoLen > 1 ) {
+            char* infoLog = (char *)malloc (sizeof(char) * infoLen );
                 
-                glGetShaderInfoLog ( shader, infoLen, NULL, infoLog );
-                printf ( "Error compiling shader:\n%s\n", infoLog );
+  &#160;         glGetShaderInfoLog ( shader, infoLen, NULL, infoLog );
+  &#160;         printf ( "Error compiling shader:\n%s\n", infoLog );
                 
-                free ( infoLog );
-            }
-            
-            glDeleteShader ( shader );
-            return 0;
-        }
-        
-        return shader;
-    } /* LoadShader() */
+  &#160;         free ( infoLog );
+       }
+  &#160;    glDeleteShader ( shader );
+  &#160;    return 0;
+    }
+    return shader;
+}
     
 public:
-    Graphics(SDL_Window* window) {  
+   Graphics(SDL_Window* window) {  
         printf("Graphics->Graphics() constructor\n");
         m_window = window;
-    }
+   }
     
-    bool Init() {
-        printf("Graphics->Init()\n");
+   bool Init() {
+    printf("Graphics->Init()\n");
+    GLbyte vShaderStr[] =
+	   "attribute vec4 a_Position;                   \n"
+	<b>   "uniform   mat4 u_MVP_Matrix;                 \n"</b>
+	   "void main()                                  \n"
+	   "{                                            \n"
+	<b>   "   gl_Position = u_MVP_Matrix * vec4(a_Position.xyz, 1.0);  \n"</b>
+	   "}                                            \n";
         
-        GLbyte vShaderStr[] =
-        "attribute vec4 a_Position;                   \n"
-<b>        "uniform   mat4 u_MVP_Matrix;                 \n"</b>
-        "void main()                                  \n"
-        "{                                            \n"
-<b>        "   gl_Position = u_MVP_Matrix * vec4(a_Position.xyz, 1.0);  \n"</b>
-        "}                                            \n";
-
-        GLbyte fShaderStr[] =
-        "precision mediump float;\n"\
-        "void main()                                  \n"
-        "{                                            \n"
-<b>        "   gl_FragColor = vec4 ( 1.0, 0.3255, 0.298, 1.0 );\n"</b>
-        "}                                            \n";
+&#160;   GLbyte fShaderStr[] =
+       "precision mediump float;\n"\
+       "void main()                                  \n"
+	   "{                                            \n"
+<b>       "   gl_FragColor = vec4 ( 1.0, 0.3255, 0.298, 1.0 );\n"</b>
+	   "}                                            \n";
         
-        GLuint vertexShader;
-        GLuint fragmentShader;
-        GLuint programObject;
-        GLint  linked;
+&#160;   GLuint vertexShader;
+&#160;   GLuint fragmentShader;
+&#160;   GLuint programObject;
+&#160;   GLint  linked;
         
         // Load the vertex/fragment shaders
         vertexShader = LoadShader ( GL_VERTEX_SHADER, (const char *)vShaderStr );
@@ -331,5 +322,4 @@ int main(int argc, char *argv[]) {
     SDL_Quit();
     
     return 0;
-} /* main() */
-```
+}
