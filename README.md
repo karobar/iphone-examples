@@ -11,7 +11,7 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/karobar/iphone-examples/master/phase1.jpg" width="25%" height="25%"/>
 </p>
-<h6 align="center">An application which draws a parallelogram that follows your finger as you drag it across the screen.</h6>
+<h6 align="center">An application which draws a parallelogram that follows your finger as you drag it across the screen</h6>
 
 <hr />
 
