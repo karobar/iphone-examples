@@ -2,7 +2,7 @@
 
 ######_Skeleton code written by instructors Georgi Chunev and Mitja Hmeljak_
 
----
+<hr />
 
 <h2 align="center">Introduction to Shaders<h2>
 <p align="center">
@@ -10,7 +10,7 @@
 </p>
 <h6 align="center">An application which draws a parallelogram that follows your finger as you drag it across the screen.</h6>
 
----
+<hr />
 
 <h2 align="center">Model-View Transformations<h2>
 <p align="center">
@@ -31,7 +31,7 @@
 <h5 align="center">Polygon Rotate</h5>
 <h6 align="center">And rotate around the 'center of mass'</h6>
 
----
+<hr />
 
 <h2 align="center">Lighting & Camera Motion</h2>
 <p align="center">
@@ -41,7 +41,7 @@
 <h6 align="center">Directional and Point Lights</h6>
 <h6 align="center">Diffuse and Specular Lighting</h6>
 
----
+<hr />
 
 <h2 align="center">Introduction to Texturing</h2>
 <p align="center">
