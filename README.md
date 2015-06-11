@@ -6,7 +6,7 @@
 
 <h2 align="center">Introduction to Shaders</h2>
 <p align="center">
-  [<a href="https://github.com/karobar/iphone-examples/tree/master/1%20-%20Introduction%20to%20Shaders">View Source</a>]
+  [<a href="https://github.com/karobar/iphone-examples/tree/master/1%20-%20Introduction%20to%20Shaders/main.cpp">View Source</a>]
 </p>
 <p align="center">
   <img src="https://raw.githubusercontent.com/karobar/iphone-examples/master/phase1.jpg" width="25%" height="25%"/>
