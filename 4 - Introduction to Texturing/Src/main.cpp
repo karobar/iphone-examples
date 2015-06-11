@@ -1,11 +1,3 @@
-/*********************************************************/
-/* Mitja Hmeljak, Georgi Chunev                          */
-/* Starting Code for OpenGL ES 2.0 Assignment 1          */
-/* B481                                                  */
-/* Indiana University                                    */
-/* April 2, 2014                                         */
-/*********************************************************/
-
 #include "SDL.h"
 #include "ResourcePath.h"
 
@@ -78,14 +70,11 @@ public:
     Camera*         m_pCamera;
     
 public:
-    
-    /* ------------------------------ */
-    Graphics(SDL_Window* window) {             /* constructor */
+    Graphics(SDL_Window* window) {       
         printf("Graphics->Graphics() constructor\n");
         m_window = window;
     }
     
-    /* ------------------------------ */
     bool Init() {
         printf("Graphics->Init()\n");
         int successfullInit = GL_TRUE;
@@ -129,27 +118,18 @@ public:
         glEnable(GL_CULL_FACE);
         glEnable(GL_DEPTH_TEST);
         
-        //B481-TODO:
-        // Enable alpha blending - GL_BLEND
-        // glEnable(...);
         glEnable(GL_BLEND);
         
-        // Set the blending function to multiply the source color by alpha
-        // and the destination color by (1-alpha)
-        // i.e. FinalColor = Src * alpha + Dst * (1.0 - alpha);
-        // glBlendFunc(...);
         glBlendFunc(GL_SRC_ALPHA,GL_ONE_MINUS_SRC_ALPHA);
         
         return successfullInit;
-    } /* bool Init() */
+    } 
 
-    /* ------------------------------ */
     void Draw() {
         // uncomment for some wild colorful flashes:
         //glClearColor(rand() % 255 / 255.0f, rand() % 255 / 255.0f, rand() % 255 / 255.0f, 1);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
 
-        // B481-TODO:
         // Compute a delta time:
         float secondsSinceStart = SDL_GetTicks() / 1000.0f;
         float dt = secondsSinceStart-lastTime;
@@ -158,23 +138,17 @@ public:
         m_pSceneManager->draw(m_pCamera, dt);
         
         SDL_GL_SwapWindow(m_window);
-    } /* void Draw() */
-    /* ------------------------------ */
+    } 
     
-}; /* class Graphics */
+};
 
-
-/* ------------------------------------------------------------ */
 void UpdateFrame(void* param) {
     //SDL_Log("UpdateFrame()");
     Graphics* graphics = (Graphics*)param;
     graphics->Draw();
-} /* void UpdateFrame() */
+}
 
-
-/* ------------------------------------------------------------ */
-int EventFilter(void* userdata, SDL_Event* event)
-{
+int EventFilter(void* userdata, SDL_Event* event) {
     glm::vec4 touchVec(event->tfinger.x, event->tfinger.y, 0.0, 0.0f);
     glm::vec4 dTouchVec(event->tfinger.dx, event->tfinger.dy, 0.0, 0.0f);
     if (g_displayOrientation == E_ORIENTATION_LANDSCAPE)
@@ -184,16 +158,13 @@ int EventFilter(void* userdata, SDL_Event* event)
         dTouchVec = ViewTransform * dTouchVec;
     }
     
-    switch (event->type)
-    {
+    switch (event->type) {
         case SDL_FINGERMOTION:
-            if (g_mode == E_MODE_STRAFE)
-            {
+            if (g_mode == E_MODE_STRAFE) {
                 g_graphics->m_pCamera->translateCamera(10.0f*dTouchVec.x, 0.0f, 10.0f*dTouchVec.y);
             }
             
-            else if (g_mode == E_MODE_FREELOOK)
-            {
+            else if (g_mode == E_MODE_FREELOOK) {
                 g_graphics->m_pCamera->addPitchRotation(-100.0f*dTouchVec.y);
                 g_graphics->m_pCamera->addYawRotation(-100.0f*dTouchVec.x);
             }
@@ -201,12 +172,10 @@ int EventFilter(void* userdata, SDL_Event* event)
             
         case SDL_FINGERDOWN:
             //SDL_Log("Finger Down");
-            if (touchVec.x >= 0.5)
-            {
+            if (touchVec.x >= 0.5) {
                 g_mode = E_MODE_FREELOOK;
             }
-            else
-            {
+            else {
                 g_mode = E_MODE_STRAFE;
             }
             
@@ -217,7 +186,6 @@ int EventFilter(void* userdata, SDL_Event* event)
             g_mode = E_MODE_NONE;
             return 0;
     }
-    
     return 1;
 }
 
@@ -341,5 +309,4 @@ int main(int argc, char *argv[]) {
     SDL_Quit();
     
     return 0;
-} /* main() */
-/* ------------------------------------------------------------ */
+} 
