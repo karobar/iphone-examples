@@ -4,7 +4,7 @@
 
 <hr />
 
-<h2 align="center">Introduction to Shaders<h2>
+<h2 align="center">Introduction to Shaders</h2>
 <p align="center">
   [<a href="https://github.com/karobar/iphone-examples/tree/master/1%20-%20Introduction%20to%20Shaders">View Source</a>]
 </p>
@@ -15,7 +15,7 @@
 
 <hr />
 
-<h2 align="center">Model-View Transformations<h2>
+<h2 align="center">Model-View Transformations</h2>
 <p align="center">
   [<a href="https://github.com/karobar/iphone-examples/blob/master/2%20-%20Model-View%20Transformations/main.cpp">View Source</a>]
 </p>
