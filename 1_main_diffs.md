@@ -25,36 +25,36 @@ private:
         GLuint shader;
         GLint compiled;
         
-&#160;       // Create the shader object
+        // Create the shader object
         shader = glCreateShader ( type );
         
-   &#160;    if ( shader == 0 )
-   &#160;        return 0;
+        if ( shader == 0 )
+            return 0;
         
-   &#160;    // Load the shader source
-   &#160;    glShaderSource ( shader, 1, &shaderSrc, NULL );
+        // Load the shader source
+        glShaderSource ( shader, 1, &shaderSrc, NULL );
         
-   &#160;    // Compile the shader
-   &#160;    glCompileShader ( shader );
+        // Compile the shader
+        glCompileShader ( shader );
         
-   &#160;    // Check the compile status
-   &#160;    glGetShaderiv ( shader, GL_COMPILE_STATUS, &compiled );
+        // Check the compile status
+        glGetShaderiv ( shader, GL_COMPILE_STATUS, &compiled );
         
-   &#160;    if ( !compiled ) {
-   &#160;        GLint infoLen = 0;
+        if ( !compiled ) {
+            GLint infoLen = 0;
        
-   &#160;    glGetShaderiv ( shader, GL_INFO_LOG_LENGTH, &infoLen );
+        glGetShaderiv ( shader, GL_INFO_LOG_LENGTH, &infoLen );
             
-   &#160;    if ( infoLen > 1 ) {
+        if ( infoLen > 1 ) {
             char* infoLog = (char *)malloc (sizeof(char) * infoLen );
                 
-  &#160;         glGetShaderInfoLog ( shader, infoLen, NULL, infoLog );
-  &#160;         printf ( "Error compiling shader:\n%s\n", infoLog );
+            glGetShaderInfoLog ( shader, infoLen, NULL, infoLog );
+            printf ( "Error compiling shader:\n%s\n", infoLog );
                 
-  &#160;         free ( infoLog );
+            free ( infoLog );
        }
-  &#160;    glDeleteShader ( shader );
-  &#160;    return 0;
+       glDeleteShader ( shader );
+       return 0;
     }
     return shader;
 }
@@ -75,17 +75,17 @@ public:
 	<b>   "   gl_Position = u_MVP_Matrix * vec4(a_Position.xyz, 1.0);  \n"</b>
 	   "}                                            \n";
         
-&#160;   GLbyte fShaderStr[] =
+    GLbyte fShaderStr[] =
        "precision mediump float;\n"\
        "void main()                                  \n"
 	   "{                                            \n"
 <b>       "   gl_FragColor = vec4 ( 1.0, 0.3255, 0.298, 1.0 );\n"</b>
 	   "}                                            \n";
         
-&#160;   GLuint vertexShader;
-&#160;   GLuint fragmentShader;
-&#160;   GLuint programObject;
-&#160;   GLint  linked;
+    GLuint vertexShader;
+    GLuint fragmentShader;
+    GLuint programObject;
+    GLint  linked;
         
         // Load the vertex/fragment shaders
         vertexShader = LoadShader ( GL_VERTEX_SHADER, (const char *)vShaderStr );
@@ -146,7 +146,7 @@ public:
     void Draw() {
 <b>    glClearColor(0.286, 0.6, 0.5294, 1);</b>
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
-<b>
+**
 GLfloat vVertices[] = {30.0,  80.0, 0.0,
                        20.0,  60.0, 0.0,
                        60.0,  80.0, 0.0,
@@ -170,7 +170,7 @@ SDL_Log("can I print myFinger pos? %f, %f", myFinger.x, myFinger.y);
        0.0,                             0.0,                             1.0,  0.0,
       -1.0+(myFinger.x-normalizedCX)*2, 1.0-(myFinger.y-normalizedCY)*2, 0.0,  1.0
  };
-</b>
+**
         // Use the program object
         glUseProgram ( m_shaderProgram );
 <b>
