@@ -1,3 +1,4 @@
+<pre>
 ```
 #include "SDL.h"
 #include "ResourcePath.h"
@@ -6,11 +7,11 @@
 #include <OpenGLES/ES2/glext.h>
 
 #include <memory>
+```
 using namespace std;
 
-```
-**`SDL_TouchFingerEvent myFinger;`**
-```
+<b>SDL_TouchFingerEvent myFinger;</b>
+
 class Graphics {
 private:
     
@@ -67,35 +68,27 @@ private:
     } /* LoadShader() */
     
 public:
-    /* ------------------------------ */
-    Graphics(SDL_Window* window) {             /* constructor */
+    Graphics(SDL_Window* window) {  
         printf("Graphics->Graphics() constructor\n");
         m_window = window;
     }
     
-    /* ------------------------------ */
     bool Init() {
         printf("Graphics->Init()\n");
         
         GLbyte vShaderStr[] =
         "attribute vec4 a_Position;                   \n"
-```
-**`"uniform   mat4 u_MVP_Matrix;                 \n"`**
-```
+<b>        "uniform   mat4 u_MVP_Matrix;                 \n"</b>
         "void main()                                  \n"
         "{                                            \n"
-```
-**`"   gl_Position = u_MVP_Matrix * vec4(a_Position.xyz, 1.0);  \n"`**
-```
+<b>        "   gl_Position = u_MVP_Matrix * vec4(a_Position.xyz, 1.0);  \n"</b>
         "}                                            \n";
 
         GLbyte fShaderStr[] =
         "precision mediump float;\n"\
         "void main()                                  \n"
         "{                                            \n"
-```      
-**`"  gl_FragColor = vec4 ( 1.0, 0.3255, 0.298, 1.0 );\n"`**
-```
+<b>        "   gl_FragColor = vec4 ( 1.0, 0.3255, 0.298, 1.0 );\n"</b>
         "}                                            \n";
         
         GLuint vertexShader;
@@ -159,21 +152,15 @@ public:
         return true;
     } /* bool Init() */
 
-    /* ------------------------------ */
     void Draw() {
-        // uncomment for some wild colorful flashes:
-```
-**`glClearColor(0.286, 0.6, 0.5294, 1);`**
-```
+<b>    glClearColor(0.286, 0.6, 0.5294, 1);</b>
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
-
-```
-**
+<b>
 GLfloat vVertices[] = {30.0,  80.0, 0.0,
                        20.0,  60.0, 0.0,
                        60.0,  80.0, 0.0,
                        50.0,  60.0, 0.0};
-**
+
 //there must be a better way than this
 float centerX = (30.0 + 20.0 + 60.0 + 50.0)/4.0;
 float centerY = (80.0 + 60.0 + 80.0 + 60.0)/4.0;
@@ -192,40 +179,33 @@ SDL_Log("can I print myFinger pos? %f, %f", myFinger.x, myFinger.y);
        0.0,                             0.0,                             1.0,  0.0,
       -1.0+(myFinger.x-normalizedCX)*2, 1.0-(myFinger.y-normalizedCY)*2, 0.0,  1.0
  };
-```
-
+</b>
         // Use the program object
         glUseProgram ( m_shaderProgram );
-
+<b>
         //  what would these be ?
         GLint MVP_Location = glGetUniformLocation(m_shaderProgram, "u_MVP_Matrix");
         glUniformMatrix4fv(MVP_Location, 1, false, vMVPMatrix);
-        
+</b>        
         // Load the vertex data
         glVertexAttribPointer ( 0, 3, GL_FLOAT, GL_FALSE, 0, vVertices );
         glEnableVertexAttribArray ( 0 );
         
-        glDrawArrays ( GL_TRIANGLE_STRIP, 0, 4 );
+        <b>glDrawArrays ( GL_TRIANGLE_STRIP, 0, 4 );</b>
         
         SDL_GL_SwapWindow(m_window);
-    } /* void Draw() */
-    /* ------------------------------ */
+    } 
     
-}; /* class Graphics */
+}; 
 
-
-/* ------------------------------------------------------------ */
 void UpdateFrame(void* param) {
-    //SDL_Log("UpdateFrame()");
     Graphics* graphics = (Graphics*)param;
     graphics->Draw();
-} /* void UpdateFrame() */
+}
 
-
-
-/* ------------------------------------------------------------ */
 int EventFilter(void* userdata, SDL_Event* event) {
     SDL_Log("EventFilter()");
+    <b>
     myFinger= (*event).tfinger;
     
     switch (event->type) {
@@ -242,12 +222,11 @@ int EventFilter(void* userdata, SDL_Event* event) {
         case SDL_FINGERUP: {
             SDL_Log("Finger Up");
             return 0;}
-    } /* switch () */
+    } 
+    </b>
     return 1;
-} /* int EventFilter() */
+}
 
-/* ------------------------------------------------------------ */
-/* ------------------------------------------------------------ */
 int main(int argc, char *argv[]) {
     /* initialize SDL, specifically its video subsystem, i.e. graphics: */
     if (SDL_Init(SDL_INIT_VIDEO) < 0) {
