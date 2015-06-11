@@ -1,11 +1,3 @@
-/*********************************************************/
-/* Mitja Hmeljak, Georgi Chunev                          */
-/* Template Code for OpenGL ES 2.0 Assignment 2          */
-/* B481                                                  */
-/* Indiana University                                    */
-/* April 13, 2014                                        */
-/*********************************************************/
-
 #include "SDL.h"
 
 #include <OpenGLES/ES2/gl.h>
@@ -38,10 +30,6 @@ enum eEditMode {
 
 eEditMode g_mode = E_MODE_INSERT;
 
-
-/* ------------------------------------------------------------ */
-/* class Graphics */
-/* ------------------------------------------------------------ */
 class Graphics {
 
 private:
@@ -62,7 +50,6 @@ public:
     float                       m_touchZoneHeight;
     
 private:
-    
     /* ------------------------------ */
     /* Create a shader object, load the shader source, and compile the shader. */
     /* ------------------------------ */
@@ -109,15 +96,11 @@ private:
     } /* LoadShader() */
     
 public:
-    
-    /* ------------------------------ */
-    /* constructor */
     Graphics(SDL_Window* window) {
         SDL_Log("Graphics->Graphics() constructor\n");
         m_window = window;
     }
     
-    /* ------------------------------ */
     /* initialize the Graphics class */
     bool Init() {
         SDL_Log("Graphics->Init()\n");
@@ -217,9 +200,8 @@ public:
         m_touchZoneVertices.push_back(tmp);
         
         return true;
-    } /* bool Init() */
-
-    /* ------------------------------ */
+    } 
+    
     void Draw() {
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
         
@@ -228,11 +210,7 @@ public:
         m_MVPMatrix = glm::mat4x4(1.0f); // Load Identity
         glm::mat4x4 lProjMatrix = glm::ortho(0.0f, (float)m_w, 0.0f, (float)m_h, -1.0f, 1.0f);
 
-        /* B481-TODO: you may need implement a fixed-point rotation here. */
-        /* hint: a glm::mat4x4 implementing Model-View transformations may be useful... */  
         if(g_mode == E_MODE_TRANSFORM) {
-            //float xDistance = m_fingerDragOffset.z;
-            //float yDistance = lCentroid.position.y - m_fingerDragOffset.y;
             float phi = 0;
             //if(glm::abs(m_fingerDragOffset.z) > glm::abs(yDistance)) {
             //    phi = glm::acos(yDistance / m_fingerDragOffset.z);
@@ -266,7 +244,6 @@ public:
         GLint MVP_Location = glGetUniformLocation(m_shaderProgram, "u_MVP_Matrix");
         glUniformMatrix4fv(MVP_Location, 1, false, glm::value_ptr(m_MVPMatrix));
         
-        /* B481-TODO: you may have to set the the drawing color here. */
         GLint fragmentColor = glGetUniformLocation(m_shaderProgram, "u_fragmentColor");
         glUniform4f(fragmentColor,1.0,0.0,0.0,1.0);
         
@@ -279,15 +256,13 @@ public:
         
         if(m_vertices.size() > 2) {
             glUniform4f(fragmentColor, 1.0,1.0,0.0,1.0);
-            /* B481-TODO: you may have draw the centroid here */
             glVertexAttribPointer (0 , 3, GL_FLOAT, GL_FALSE, 0, &lCentroid);
             glDrawArrays (GL_POINTS, 0, 1);
         }
             
-        /* B481-TODO: you may have set the correct color for element highlighting */
         glUniform4f(fragmentColor, 1.0,1.0,1.0,1.0);
         
-        /* B481-TODO: you may have to copy the selected vertices */
+        /*    copy the selected vertices */
         /*    from the pointed locations in m_pVertices */
         /*    to a temporary vector in sequence */
         std::vector<vertexData> tmpVertices;
@@ -297,7 +272,7 @@ public:
             tmpVertices.push_back(**it);
         }
 
-        /* B481-TODO: you may have to draw the selected vertices,  */
+        /*   draw the selected vertices,  */
         /*    and the highlighted centroid if necessary. */       
         glVertexAttribPointer (0 , 3, GL_FLOAT, GL_FALSE, 0, &tmpVertices[0]);
         glDrawArrays( GL_POINTS, 0, tmpVertices.size());
@@ -306,7 +281,7 @@ public:
         // Draw Mode Toggle Touch Zone
         m_MVPMatrix = lProjMatrix;
         glUniformMatrix4fv(MVP_Location, 1, false, glm::value_ptr(m_MVPMatrix));
-        /* B481-TODO: you may have to use different colors */
+        /* Use different colors */
         /*     for the three distinct interaction modes. */
         if(g_mode == 0) {
             glUniform4f(fragmentColor,1.0,0.0,0.0,1.0);
@@ -322,10 +297,8 @@ public:
 
         
         SDL_GL_SwapWindow(m_window);
-    } /* void Draw() */
-    /* ------------------------------ */
+    } 
     
-    /* ------------------------------ */
     void generateProximityList(glm::vec3 curPos) {
         std::vector<vertexData>::iterator it;
         float pointProximityRadius = 20.0f;
@@ -335,8 +308,8 @@ public:
         m_pVertices.clear();
         for (it = m_vertices.begin(); it != m_vertices.end(); it++) {
             
-            /* B481-TODO: you may have to check for proximity to curPos */
-            /*     and store a pointer to the closest candidate in m_pVertices */
+            /* Check for proximity to curPos */
+            /* and store a pointer to the closest candidate in m_pVertices */
             if (glm::distance(curPos, it->position) < pointProximityRadius) {
                 SDL_Log("too close to a point! ");
                 m_pVertices.push_back(&(*it));
@@ -366,7 +339,7 @@ public:
                 SDL_Log("currentlength to vertex #%d = %f", i, length);
                 SDL_Log("distance = %f", distance);
                 
-                /* B481-TODO: you may have to check for edges proximity, */
+                /* Check for edges proximity, */
                 /*    and store pointers to the vertices of the closest candidate in m_pVertices */
                 if(glm::abs(height) < minDistance && length < 0 && length > -distance) {
                     SDL_Log("too close to an edge!");
@@ -381,7 +354,7 @@ public:
             vertexData lCentroid = getCentroid();
 
 
-            /* B481-TODO: you may have to check for curPos proximity to the centroid, */
+            /* Check for curPos proximity to the centroid, */
             /*     and store pointers to all m_vertices in m_pVertices */
             if (glm::distance(curPos, lCentroid.position) < pointProximityRadius) {
                 int i = 0;
@@ -391,26 +364,23 @@ public:
             }
         }
         
-    } /* void generateProximityList */
+    } 
     
-    /* ------------------------------ */
     std::vector<vertexData *> & getProximityList() {
         return m_pVertices;
     }
     
-    /* ------------------------------ */
     void clearProximityList() {
         m_pVertices.clear();
     }
     
-    /* ------------------------------ */
     vertexData getCentroid() {
         std::vector<vertexData>::iterator it;
         glm::vec3 tmpVec(0.0f,0.0f,0.0f);
         vertexData tmpData;
 
-        /* B481-TODO: you may have to compute and */
-        /*            return the average position from m_vertices */
+        /* Compute and */
+        /* return the average position from m_vertices */
         float totalX = 0;
         float totalY = 0;
         int i = 0;
@@ -425,19 +395,17 @@ public:
         return tmpData;
     }
     
-    /* ------------------------------ */
     void getDimensions(float &w, float &h) {
         w = m_w;
         h = m_h;
     }
     
-    /* ------------------------------ */
     void applyModelTransformation() {
         std::vector<vertexData>::iterator it;
         vertexData lCentroid = getCentroid();
 
-        /* B481-TODO: you may have to permanently apply all     */
-        /*            temporary transformations to the vertices */
+        /* Permanently apply all     */
+        /* temporary transformations to the vertices */
         float phi = 0;
         float dr = glm::distance(m_fingerDragOffset.x, m_fingerDragOffset.y);
         SDL_Log("applying model transformation (%f,%f)",m_fingerDragOffset.x,m_fingerDragOffset.y);
@@ -466,20 +434,14 @@ public:
         }
         
     }
-}; /* class Graphics */
-/* ------------------------------------------------------------ */
+}; 
 
-
-
-/* ------------------------------------------------------------ */
 void UpdateFrame(void* param) {
     //SDL_Log("UpdateFrame()");
     Graphics* graphics = (Graphics*)param;
     graphics->Draw();
-} /* void UpdateFrame() */
+} 
 
-
-/* ------------------------------------------------------------ */
 int EventFilter(void* userdata, SDL_Event* event) {
     SDL_Log("EventFilter()");
     SDL_Log("Mode: %d", g_mode);
@@ -499,13 +461,13 @@ int EventFilter(void* userdata, SDL_Event* event) {
             translationVector = glm::vec3(w*event->tfinger.dx, -h*event->tfinger.dy, 0.0);
             if (g_mode == E_MODE_EDIT) {
                 for(it=proximityList.begin(); it!=proximityList.end(); it++) {
-                    /* B481-TODO: you may have to use the input vector --a translation-- */
-                    /*            to update the positions of the selected vertices */
+                    /* Use the input vector --a translation-- */
+                    /* to update the positions of the selected vertices */
                     (*it)->position = (*it)->position + translationVector;
                 }
             }
             if (g_mode == E_MODE_TRANSFORM) {
-                /* B481-TODO: you may have to use the input vector */
+                /* Use the input vector */
                 /*            to compute a model transformation in the Draw() method. */
                 //float totalXChange = g_graphics->m_fingerDragOffset.z + w*event->tfinger.dx;
                 //SDL_Log("totalXChange = %f", totalXChange);
@@ -526,12 +488,12 @@ int EventFilter(void* userdata, SDL_Event* event) {
                 }
                 
                 if (g_mode == E_MODE_INSERT) {
-                    /* B481-TODO: you may have to complete implementing generateProximityList() */
+                    /* Complete implementing generateProximityList() */
                     g_graphics->generateProximityList(hitPoint);
                     proximityList = g_graphics->getProximityList();
                     if (proximityList.size() == 0) {
-                        /* B481-TODO: you may have to insert a vertex */
-                        /*            with position equal to hitPoint in m_vertices. */
+                        /* Insert a vertex */
+                        /*  with position equal to hitPoint in m_vertices. */
                         SDL_Log("inserting a new vertex!");
                         vertexData insertedVertex;
                         insertedVertex.position = glm::vec3(hitPoint.x,hitPoint.y,0.0f);
@@ -548,16 +510,16 @@ int EventFilter(void* userdata, SDL_Event* event) {
         case SDL_FINGERUP:
             SDL_Log("Finger Up");
             if (g_mode == E_MODE_TRANSFORM) {
-                /* B481-TODO: *optionally* you may apply */
-                /*            the temporary transformations upon releasing */
+                /* Apply */
+                /* the temporary transformations upon releasing */
                 g_graphics->applyModelTransformation();
             }
             g_graphics->m_fingerDragOffset = glm::vec3(0.0f);
             g_graphics->clearProximityList();
             return 0;
-    } /* switch () */
+    } 
     return 1;
-} /* int EventFilter() */
+} 
 
 
 /* ------------------------------------------------------------ */
@@ -672,5 +634,4 @@ int main(int argc, char *argv[]) {
     SDL_Quit();
     
     return 0;
-} /* main() */
-/* ------------------------------------------------------------ */
+} 
