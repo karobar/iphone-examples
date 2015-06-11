@@ -1,13 +1,3 @@
-/*********************************************************/
-/* Mitja Hmeljak, Georgi Chunev                          */
-/* Starting Code for OpenGL ES 2.0 Assignment 1          */
-/* B481                                                  */
-/* Indiana University                                    */
-/* April 2, 2014                                         */
-/*********************************************************/
-
-
-
 #include "SDL.h"
 #include "ResourcePath.h"
 
@@ -75,16 +65,11 @@ private:
     } /* LoadShader() */
     
 public:
-    //static float x;
-    //static float y;
-    
-    /* ------------------------------ */
-    Graphics(SDL_Window* window) {             /* constructor */
+    Graphics(SDL_Window* window) {           
         printf("Graphics->Graphics() constructor\n");
         m_window = window;
     }
     
-    /* ------------------------------ */
     bool Init() {
         printf("Graphics->Init()\n");
         
@@ -94,7 +79,6 @@ public:
         "void main()                                  \n"
         "{                                            \n"
          "   gl_Position = u_MVP_Matrix * vec4(a_Position.xyz, 1.0);  \n"
-//       "   gl_Position = vec4(a_Position.xyz, 1.0);  \n"
         "}                                            \n";
 
         GLbyte fShaderStr[] =
@@ -163,11 +147,10 @@ public:
         glClearColor ( 0.0f, 0.0f, 0.0f, 0.0f );
         
         return true;
-    } /* bool Init() */
+    }
 
     /* ------------------------------ */
     void Draw() {
-        // uncomment for some wild colorful flashes:
         glClearColor(0.286, 0.6, 0.5294, 1);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
         
@@ -187,13 +170,13 @@ public:
         
         SDL_Log("can I print myFinger pos? %f, %f", myFinger.x, myFinger.y);
         
-         //  what could be vMVPMatrix ?
-         GLfloat vMVPMatrix[16] = {
+        //  what could be vMVPMatrix ?
+        GLfloat vMVPMatrix[16] = {
                0.00625,                         0.0,                             0.0,  0.0, //scale by 2/width
                0.0,                            -0.004166666,                     0.0,  0.0, //scale by -2/height
                0.0,                             0.0,                             1.0,  0.0,
               -1.0+(myFinger.x-normalizedCX)*2, 1.0-(myFinger.y-normalizedCY)*2, 0.0,  1.0
-         };
+        };
 
         // Use the program object
         glUseProgram ( m_shaderProgram );
@@ -209,22 +192,17 @@ public:
         glDrawArrays ( GL_TRIANGLE_STRIP, 0, 4 );
         
         SDL_GL_SwapWindow(m_window);
-    } /* void Draw() */
-    /* ------------------------------ */
-    
-}; /* class Graphics */
+    } 
+};
 
 
 /* ------------------------------------------------------------ */
 void UpdateFrame(void* param) {
-    //SDL_Log("UpdateFrame()");
     Graphics* graphics = (Graphics*)param;
     graphics->Draw();
-} /* void UpdateFrame() */
+}
 
 
-
-/* ------------------------------------------------------------ */
 int EventFilter(void* userdata, SDL_Event* event) {
     SDL_Log("EventFilter()");
     myFinger= (*event).tfinger;
@@ -243,12 +221,10 @@ int EventFilter(void* userdata, SDL_Event* event) {
         case SDL_FINGERUP: {
             SDL_Log("Finger Up");
             return 0;}
-    } /* switch () */
+    } 
     return 1;
-} /* int EventFilter() */
+} 
 
-/* ------------------------------------------------------------ */
-/* ------------------------------------------------------------ */
 int main(int argc, char *argv[]) {
     /* initialize SDL, specifically its video subsystem, i.e. graphics: */
     if (SDL_Init(SDL_INIT_VIDEO) < 0) {
