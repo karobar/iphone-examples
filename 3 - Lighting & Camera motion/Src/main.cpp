@@ -1,11 +1,3 @@
-/*********************************************************/
-/* Mitja Hmeljak, Georgi Chunev                          */
-/* Starting Code for OpenGL ES 2.0 Assignment 1          */
-/* B481                                                  */
-/* Indiana University                                    */
-/* April 2, 2014                                         */
-/*********************************************************/
-
 #include "SDL.h"
 #include "ResourcePath.h"
 
@@ -125,14 +117,11 @@ private:
     } /* LoadShader() */
     
 public:
-    
-    /* ------------------------------ */
-    Graphics(SDL_Window* window) {             /* constructor */
+    Graphics(SDL_Window* window) {     
         printf("Graphics->Graphics() constructor\n");
         m_window = window;
     }
     
-    /* ------------------------------ */
     bool Init() {
         printf("Graphics->Init()\n");
         
@@ -241,9 +230,8 @@ public:
         glEnable(GL_DEPTH_TEST);
         
         return true;
-    } /* bool Init() */
-
-    /* ------------------------------ */
+    }
+    
     void Draw() {
         // uncomment for some wild colorful flashes:
         // glClearColor(rand() % 255 / 255.0f, rand() % 255 / 255.0f, rand() % 255 / 255.0f, 1);
@@ -252,21 +240,15 @@ public:
         m_pSceneManager->draw(m_shaderProgram, m_pCamera);
         
         SDL_GL_SwapWindow(m_window);
-    } /* void Draw() */
-    /* ------------------------------ */
-    
-}; /* class Graphics */
+    }
+}; 
 
-
-/* ------------------------------------------------------------ */
 void UpdateFrame(void* param) {
     //SDL_Log("UpdateFrame()");
     Graphics* graphics = (Graphics*)param;
     graphics->Draw();
-} /* void UpdateFrame() */
+} 
 
-
-/* ------------------------------------------------------------ */
 int EventFilter(void* userdata, SDL_Event* event)
 {
     glm::vec4 touchVec(event->tfinger.x, event->tfinger.y, 0.0, 0.0f);
@@ -283,7 +265,6 @@ int EventFilter(void* userdata, SDL_Event* event)
         case SDL_FINGERMOTION:
             if (g_mode == E_MODE_STRAFE)
             {
-                /* B481-TODO: you may have to translate the camera here. */
                 /* Translation is in the X-Z plane:
                    forward-backward motion,
                    and sideway motion (also called "strafing" in some videogames).
@@ -294,7 +275,6 @@ int EventFilter(void* userdata, SDL_Event* event)
             
             else if (g_mode == E_MODE_FREELOOK)
             {
-                /* B481-TODO: you may have to rotate the camera here. */
                 /* Modify yaw and pitch angles
                    to implement first-person view rotations
                     (also called "free look" in some videogames). */
@@ -327,9 +307,6 @@ int EventFilter(void* userdata, SDL_Event* event)
     return 1;
 }
 
-
-/* ------------------------------------------------------------ */
-/* ------------------------------------------------------------ */
 int main(int argc, char *argv[]) {
     /* initialize SDL, specifically its video subsystem, i.e. graphics: */
     if (SDL_Init(SDL_INIT_VIDEO) < 0) {
