@@ -23,7 +23,7 @@
   <img src="https://raw.githubusercontent.com/karobar/iphone-examples/master/phase2-1.jpg" width="25%" height="25%"/>
 </p>
 
-<h5 align="center">RED: Polygon Entry/Insert Mode</h5>
+<h5 align="center">Polygon Entry/Insert Mode</h5>
 <h6 align="center">Add vertices by tapping...</h6>
 <p align="center">
 <img src="https://raw.githubusercontent.com/karobar/iphone-examples/master/phase2-2.jpg" width="25%" height="25%"/>
