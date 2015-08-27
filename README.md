@@ -1,4 +1,4 @@
-# iphone-examples
+# iPhone Examples
 #####_Code by Travis Pressler_
 ######_Skeleton code written by instructors Georgi Chunev and Mitja Hmeljak_
 
